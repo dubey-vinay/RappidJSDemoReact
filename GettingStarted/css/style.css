@@ -1,0 +1,166 @@
+/*! Rappid v3.2.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2020-07-25 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #56519c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.topbar {
+    height: 100px;
+    line-height: 100px;
+    background-color: #5755a1;
+    padding-left: 20px;
+    text-align: center;
+}
+.topbar img {
+    vertical-align: middle;
+}
+
+.header {
+    font-family: 'Open Sans', sans-serif;
+    color: #56519c;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    clear: left;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 36px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 28px;
+}
+
+hr {
+    background-color: #30d0c6;
+    height: 2px;
+    width: 40px;
+    margin: 20px auto;
+    border: 0;
+}
+
+.hero {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page {
+    max-width: 940px;
+    margin: 50px auto;
+}
+
+.screenshots {
+    width: 700px;
+    margin: 20px auto;
+}
+.screenshot {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    margin: 10px;
+    background-image: linear-gradient(180deg, #fff, #fff);
+    box-shadow: 0 9px 50px -25px #000;
+}
+.screenshot img {
+    max-width: 270px;
+    max-height: 270px;
+    vertical-align: middle;
+}
+
+ul li,
+ol li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.svg-container {
+    margin: 50px auto;
+    width: 600px;
+}
+
+pre {
+    box-shadow: 0 9px 50px -25px #000;
+    border: 1px solid lightgray;
+    padding: 20px;
+    font-size: 14px;
+    overflow: auto;
+}
+
+ol {
+    margin-top: 40px;
+}
+ol li {
+    margin-bottom: 10px;
+}
+
+ol li .section {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s linear;
+}
+ol li h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #56519c;
+    font-weight: 300;
+    cursor: pointer;
+}
+ol li h3:after {
+    content: '\21E8';
+    display: inline-block;
+    margin-left: 10px;
+}
+ol li[is-open="true"] {
+    margin-bottom: 50px;
+}
+ol li[is-open="true"] h3:after {
+    content: '\21E9';
+}
+ol li[is-open="true"] .section {
+    max-height: 1700px;
+}
+
+ol li .section a {
+    border: 2px solid #31d0c6;
+    border-radius: 10px;
+    padding: 1px 5px;
+    text-decoration: none;
+    color: #fe854f;
+}
+ol li .section a:hover {
+    color: white;
+    background-color: #31d0c6;
+}
+
+td {
+    padding: 0 8px;
+}

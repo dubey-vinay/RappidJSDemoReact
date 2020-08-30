@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <img src="./images/logo.png" />
+    </div>
+    <div class="hero">
+      <img src="./images/bg.jpg" />
+    </div>
+    <h1 class="header">Get Started With Rappid</h1>
+    <hr/>
+    <div class="page">
+
+      <div class="screenshots">
+        <div class="screenshot"><img src="./images/rappid-dark-theme.png" /></div>
+        <div class="screenshot"><img src="./images/rappid-orgchart.jpg" /></div>
+        <div class="screenshot"><img src="./images/rappid-ivr.png" /></div>
+        <div class="screenshot"><img src="./images/rappid-floorplanner.png" /></div>
+      </div>
+
+      <h2 class="header">1. Explore Demo Apps</h2>
+      <p>
+        Rappid comes with various demo apps including their source code.
+        Exploring the apps source code is the best way to get to know the framework.
+        You can even use the apps as a foundation for your own applications and customize them to your needs.
+      </p>
+      <p><b>TL;DR</b> Open the "KitchenSink" demo app <a target="_blank" href="../apps/KitchenSink/index.html">../apps/KitchenSink/index.html</a>
+        in your browser and study the <a target="_blank" href="../apps/KitchenSink/js/views/main.js">../apps/KitchenSink/js/views/main.js</a> entry point to the app.
+      </p>
+      <p>The demo apps include:</p>
+      <ul>
+        <li><a target="_blank" href="https://resources.jointjs.com/demos/rappid/apps/Chatbot">Chatbot</a>
+          (Chatbot Editor Application)
+          <table>
+            <tr>
+              <th>Folder</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><i>apps/Chatbot/Angular9</i></td>
+              <td>Angular 9 + Typescript</td>
+            </tr>
+            <tr>
+              <td><i>apps/Chatbot/ReactReduxTs</i></td>
+              <td>React + Redux + Typescript</td>
+            </tr>
+            <tr>
+              <td><i>apps/Chatbot/VueTs</i></td>
+              <td>VueJS + Typescript</td>
+            </tr>
+          </table>
+        </li>
+        <li><a target="_blank" href="../apps/KitchenSink/index.html">Kitchen Sink</a>
+          (Rappid Example Application)
+          <table>
+            <tr>
+              <th>Folder</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSink</i></td>
+              <td>ES5 (no build process required)</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkTs</i></td>
+              <td>TypeScript</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkReact</i></td>
+              <td>React + Typescript</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkAngular9</i></td>
+              <td>Angular 9 + Typescript</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkAngular6</i></td>
+              <td>Angular 6 + Typescript</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkVueJs</i></td>
+              <td>VueJS + ES6</td>
+            </tr>
+            <tr>
+              <td><i>/apps/KitchenSinkVueTs</i></td>
+              <td>VueJS + Typescript</td>
+            </tr>
+
+          </table>
+        </li>
+        <li><a target="_blank" href="../apps/BPMNEditor/index.html">apps/BPMNEditor</a> (BPMN Editor)</li>
+        <li><a target="_blank" href="../apps/DataMapping/index.html">apps/DataMapping</a> (Mapping Protocol Buffers)</li>
+        <li><a target="_blank" href="../apps/Collapsible/index.html">apps/Collapsible</a> (Collapse and Expand Branches)</li>
+        <li><a target="_blank" href="../apps/Measurement/distance.html">apps/Measurement</a> (Distance Between Elements)</li>
+        <li><a target="_blank" href="../apps/Measurement/angle.html">apps/Measurement</a> (Angle Between Links And Elements)</li>
+        <li><a target="_blank" href="../apps/Tree/index.html">apps/Tree</a> (A Radial Tree Editor)</li>
+        <li><a target="_blank" href="../apps/Layout/index.html">apps/Layout</a> (DirectedGraph and GridLayout integration)</li>
+        <li><a target="_blank" href="../apps/OrgChart/index.html">apps/OrgChart</a> (OrgChart Editor)</li>
+        <li><a target="_blank" href="../apps/QAD/index.html">apps/QAD</a> (A Dialog Generator)</li>
+        <li><a target="_blank" href="../apps/VectorEditor/index.html">apps/VectorEditor</a> (Vector Graphics Editor)</li>
+        <li><a target="_blank" href="../apps/DynamicStencil/index.html">apps/DynamicStencil</a> (Add Stencil Elements at Run-Time)</li>
+      </ul>
+
+      <p>Are you a <b>Vue</b>, <b>React</b> or <b>Angular</b> developer? We've got you covered! Explore the KitchenSink and Chatbot apps source code for your framework and check our online tutorials:
+        <ul>
+          <li><a target="_blank" href="https://resources.jointjs.com/tutorial/angular9">Angular 9 Tutorial</a></li>
+          <li><a target="_blank" href="https://resources.jointjs.com/tutorial/vue-ts">Vue Tutorial</a></li>
+          <li><a target="_blank" href="https://resources.jointjs.com/tutorial/react-ts">React Tutorial</a></li>
+        </ul>
+      </p>
+
+      <h2 class="header">2. Quick Start Guide</h2>
+      <p>A lot of diagramming apps tend to share a common layout and widgets. Let's explore this pattern and use the same naming as Rappid
+        uses for its UI widgets. Note that your own apps can look very different and use different functionality. Rappid supports wide customization possibilities. However, for simplicity, let's assume our app looks like this:</p>
+      <div class="svg-container">
+
+<svg width="664px" height="360px" viewBox="0 0 664 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#EFEFEF" x="0.5" y="44.5" width="170" height="315"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#EFEFEF" x="0.5" y="0.5" width="663" height="43"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#EFEFEF" x="493.5" y="44.5" width="170" height="315"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="171.5" y="44.5" width="321" height="315"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#F6F6F6" x="231.5" y="118.5" width="201" height="197"></rect>
+        <text id="Paper" font-family="Avenir-Roman, Avenir" font-size="24" font-weight="normal" fill="#0F1524">
+            <tspan x="300" y="183">Paper</tspan>
+        </text>
+        <text id="PaperScroller" font-family="Avenir-Roman, Avenir" font-size="24" font-weight="normal" fill="#0F1524">
+            <tspan x="267" y="86">PaperScroller</tspan>
+        </text>
+        <text id="Inspector" font-family="Avenir-Roman, Avenir" font-size="24" font-weight="normal" fill="#0F1524">
+            <tspan x="528" y="201">Inspector</tspan>
+        </text>
+        <text id="Toolbar" font-family="Avenir-Roman, Avenir" font-size="24" font-weight="normal" fill="#0F1524">
+            <tspan x="267" y="28">Toolbar</tspan>
+        </text>
+        <text id="Stencil" font-family="Avenir-Roman, Avenir" font-size="24" font-weight="normal" fill="#0F1524">
+            <tspan x="38" y="201">Stencil</tspan>
+        </text>
+        <image id="Bitmap" x="255" y="204" width="154" height="93" xlink:href="data:image/png;base64,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"></image>
+    </g>
+</svg>
+      </div>
+      <p>
+        If you look at the <a target="_blank" href="../apps/KitchenSink/js/views/main.js">KitchenSink demo application code</a>, you'll notice the same naming for the UI widgets.
+        If we decompose the KitchenSink demo app and simplify it greatly, we can see the following sections in the code:
+      </p>
+      <ol>
+        <li>
+          <h3>Initialize Graph (diagram model)</h3>
+          <div class="section">
+          <p>
+            Graph is the underlying model of the diagram. It contains <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Element">elements</a> (nodes) and <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Link">links</a> (connections between nodes) and provides a variety of algorithms to
+            efficiently traverse the graph. <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Graph">Learn more</a>.
+          </p>
+          <pre>var graph = new joint.dia.Graph;</pre>
+          </div>
+        </li>
+        <li>
+          <h3>Create Paper (graph view) & PaperScroller (paper wrapper)</h3>
+          <div class="section">
+          <p>
+            Paper is a view for our graph model. It reacts on changes in the graph and (re)renders views for elements and links automatically.
+            PaperScroller wraps paper and provides a smaller viewport to a (possibly) large paper area with scroll and zoom capabilities.
+            <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Paper">Learn more about Paper</a> and <a target="_blank" href="https://resources.jointjs.com/docs/rappid/v3.2/ui.html#ui.PaperScroller">PaperScroller</a>.
+          </p>
+            <pre>
+var paper = new joint.dia.Paper({
+    width: 1000,
+    height: 1000,
+    gridSize: 10,
+    drawGrid: true,
+    model: graph,        // Set graph as the model for paper
+    defaultLink: function(elementView, magnet) { return new joint.shapes.standard.Link({ attrs: { line: { stroke: 'white' } } }); },
+    interactive: { linkMove: false },
+    snapLinks: { radius: 70 },
+    defaultConnectionPoint: { name: 'boundary' }
+});
+            </pre>
+            <pre>
+var paperScroller = new joint.ui.PaperScroller({
+    paper: paper,
+    autoResizePaper: true,
+    cursor: 'grab'
+});
+
+document.querySelector('.paper-container').appendChild(paperScroller.el);
+paperScroller.render().center();
+            </pre>
+          </div>
+        </li>
+        <li>
+          <h3>Create Stencil (element palette)</h3>
+          <div class="section">
+          <p>
+            Stencil is a UI widget that renders a palette of shapes that can be dragged-and-dropped to the paper. Stencil can have search
+            and groups (accordion-like) and can be populated with a custom selection of shapes. <a target="_blank" href="https://resources.jointjs.com/docs/rappid/v3.2/ui.html#ui.Stencil">Learn more</a>.
+          </p>
+            <pre>
+var stencil = new joint.ui.Stencil({
+    paper: paperScroller,
+    scaleClones: true,
+    width: 240,
+    groups: {
+        myShapesGroup1: { index: 1, label: ' My Shapes 1' },
+        myShapesGroup2: { index: 2, label: ' My Shapes 2' }
+    },
+    dropAnimation: true,
+    groupsToggleButtons: true,
+    search: {
+        '*': ['type', 'attrs/label/text']
+    },
+    layout: true  // Use default Grid Layout
+});
+
+document.querySelector('.stencil-container').appendChild(stencil.el);
+stencil.render().load({
+    myShapesGroup1: [
+        { type: 'standard.Rectangle' },
+        { type: 'standard.Ellipse' }
+    ],
+    myShapesGroup2: [
+        { type: 'standard.Cylinder' },
+        { type: 'myApp.MyShape', attrs: { label: { text: 'Shape'  } }, ports: { items: [{ group: 'in' }, { group: 'out' }, { group: 'out' }] } }
+    ]
+});
+            </pre>
+          </div>
+        </li>
+        <li>
+          <h3>Create Inspector (properties editor)</h3>
+          <div class="section">
+          <p>
+            Inspector is a property editor. Based on a JSON configuration, inspector automatically generates HTML forms that keep a two-way data binding with the properties of cells (elements or links) in the graph.
+            Two-way data binding means that when the user changes
+            a value of a field in the inspector UI, the underlying data model changes too so if you then export your graph to JSON,
+            the value will be there. Also, the other way around, if you change the model programmatically, the inspector will notice
+            and re-render the UI to reflect the new values. <a target="_blank" href="https://resources.jointjs.com/docs/rappid/v3.2/ui.html#ui.Inspector">Learn more</a>.
+            <br/><br/>
+            Notice that we create the inspector when the user clicks on an element in the paper. This is one example how you can show the inspector.
+            You might have other uses cases where the Inspector is visible all the time, opened on click of a link, opened on click of a special button, etc ...
+          </p>
+            <pre>
+paper.on('element:pointerclick', function(elementView) {
+    var element = elementView.model;
+    joint.ui.Inspector.create('.inspector-container', {
+        cell: element,
+        inputs: {
+            'attrs/label/text': { type: 'text', label: 'Label', group: 'basic', index: 1 },
+            level: { type: 'range', min: 1, max: 10, unit: 'x', defaultValue: 6, label: 'Level', group: 'advanced', index: 2 }
+        },
+        groups: {
+            basic: { label: 'Basic', index: 1 },
+            advanced: { label: 'Advanced', index: 2 }
+        }
+    });
+});
+            </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Create Control Panels (Halo - element control panel & Link tools)</h3>
+          <div class="section">
+          <p>
+            Halo is a control panel above elements. It's a mini-toolbar that gives users a "quick" menu of actions.
+            Halo provides built-in actions such as "remove" or "clone" but it also allows you to define your own custom actions.
+            Apart from the default style of the Halo (where controls are spread around the element), you can choose from two other layouts: pie menu <img width="50px" src="./images/halo-pie.png" /> and toolbar <img height="40px" src="./images/halo-toolbar.png" />.
+            <a href="https://resources.jointjs.com/docs/rappid/v3.2/ui.html#ui.Halo">Learn more</a>.
+          </p>
+            <pre>
+paper.on('element:pointerclick', function(elementView) {
+    var handles = [
+        { name: 'remove', position: 'nw', events: { pointerdown: 'removeElement' } },
+        { name: 'myCustomAction', position: 'ne', icon: 'myCustomAction.png' }
+    ];
+    if (!elementView.model.hasPorts()) {
+        // Only shapes without ports will have the "link" handle in the Halo control panel. Shapes with ports can be connected by "dragging" ports.
+        handles.push({ name: 'link', position: 'e', events: { pointerdown: 'startLinking', pointermove: 'doLink', pointerup: 'stopLinking' } });
+    }
+    var halo = new joint.ui.Halo({
+        cellView: elementView,
+        handles: handles
+    }).render();
+    halo.on('action:myCustomAction:pointerdown', function(evt) {
+        alert('My Control Button Clicked!');
+    });
+});
+            </pre>
+          <p>
+            Link tools are tools that allow the user to interact with links. Rappid provides common tools such as "remove" to allow the user to remove links,
+            "vertices" that allow changing position of vertices of a link, etc. <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#linkTools">Learn more</a>.
+          </p>
+          <pre>
+paper.on('link:pointerup', function(linkView) {
+    paper.removeTools();
+    var toolsView = new joint.dia.ToolsView({
+        name: 'my-link-tools',
+        tools: [
+            new joint.linkTools.Vertices(),
+            new joint.linkTools.SourceArrowhead(),
+            new joint.linkTools.TargetArrowhead(),
+            new joint.linkTools.Segments,
+            new joint.linkTools.Remove({ offset: -20, distance: 40 })
+        ]
+    });
+    linkView.addTools(toolsView);
+});
+paper.on('blank:pointerdown', function() {
+    paper.removeTools();
+});
+          </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Create Toolbar</h3>
+          <div class="section">
+          <p>
+            Toolbar is a UI widget that renders buttons and other controls in a horizontal panel. It provides built-in tools such as undo, redo or zoom buttons but you can also
+            define your own custom controls (such as "clear" in the example code below). <a target="_blank" href="https://resources.jointjs.com/docs/rappid/v3.2/ui.html#ui.Toolbar">Learn more</a>.
+          </p>
+            <pre>
+var toolbar = new joint.ui.Toolbar({
+    groups: {
+        'clear': { index: 1 },
+        'zoom': { index: 2 }
+    },
+    tools: [
+        { type: 'button', name: 'clear', group: 'clear', text: 'Clear Diagram' },
+        { type: 'zoom-out', name: 'zoom-out', group: 'zoom' },
+        { type: 'zoom-in', name: 'zoom-in', group: 'zoom' }
+    ],
+    references: {
+        paperScroller: paperScroller    // built in zoom-in/zoom-out control types require access to paperScroller instance
+    }
+});
+
+toolbar.on({
+    'clear:pointerclick': graph.clear.bind(graph)
+});
+
+document.querySelector('.toolbar-container').appendChild(toolbar.el);
+toolbar.render();
+            </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Create Custom Shapes</h3>
+          <div class="section">
+            <p>
+              Rappid allows you to define your own custom shapes. Shapes are specified by combining SVG primitives, such as rectangle, text, ellipse, image, or generic path.
+              The code below shows you a definition of the simple shape used in the Stencil example above. <a target="_blank" href="https://resources.jointjs.com/tutorial/custom-elements">Learn more</a>.
+            </p>
+            <pre>
+joint.dia.Element.define('myApp.MyShape', {
+    attrs: {
+        body: {
+            refWidth: '100%',
+            refHeight: '100%',
+            strokeWidth: 2,
+            stroke: '#000000',
+            fill: '#FFFFFF'
+        },
+        label: {
+            textVerticalAnchor: 'middle',
+            textAnchor: 'middle',
+            refX: '50%',
+            refY: '50%',
+            fontSize: 14,
+            fill: '#333333'
+        },
+        root: { magnet: false } // Disable the possibility to connect the body of our shape. Only ports can be connected.
+    },
+    level: 10,
+    ports: {
+        groups: {
+            'in': {
+                markup: [{ tagName: 'circle', selector: 'portBody', attributes: { r: 12 } }],
+                z: -1,
+                attrs: { portBody: { magnet: true, fill: '#7C68FC' } },
+                position: { name: 'left' },
+                label: { position: { name: 'left' } }
+            },
+            'out': {
+                markup: [{ tagName: 'circle', selector: 'portBody', attributes: { r: 12 } }],
+                z: -1,
+                attrs: { portBody: { magnet: true, fill: '#7C68FC' } },
+                position: { name: 'right' },
+                label: { position: { name: 'right' } }
+            }
+        }
+    }
+}, {
+    markup: [{ tagName: 'rect', selector: 'body' }, { tagName: 'text', selector: 'label' }]
+});
+            </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Export Diagram to JSON</h3>
+          <div class="section">
+          <p>
+            At any point in time, you can export your diagrams to JSON format using a single function call (graph.toJSON()).
+            Then, you can send your diagram to your server with AJAX, WebSockets, form submission or other means
+            and store it in your database. <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Graph.prototype.fromJSON">Learn more</a>.
+          </p>
+            <pre>
+var diagramJsonString = JSON.stringify(graph.toJSON());
+            </pre>
+          <p>
+            To reconstruct your diagrams back from JSON, use:
+          <pre>
+graph.fromJSON(JSON.parse(diagramJsonString));
+          </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Working With Diagrams Programmatically</h3>
+          <div class="section">
+          <p>
+            You can change your diagrams programatically. For example, you can add new elements, remove elements, connect elements with links, react on changes
+            in the graph, change element properties, etc. See some examples below. <a href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html#dia.Graph">Learn more</a>.
+          </p>
+            <pre>
+// Add new element to the graph.
+var myShape = new joint.shapes.myApp.MyShape({
+    size: { width: 100, height: 100 },
+    position: { x: 50, y: 50 },
+    attrs: {
+        label: { text: 'My Shape' }
+    },
+    level: 3,
+    ports: { items: [{ id: 'in1', group: 'in' }, { group: 'out', id: 'out1' }] }
+});
+graph.addCell(myShape);
+            </pre>
+            <pre>
+// Get element from the graph and change its properties.
+var myShape = graph.getElements()[0];
+myShape.prop('attrs/label/text', 'My Updated Shape');
+myShape.prop('size/width', 150);
+myShape.prop('level', 2);
+myShape.prop('attrs/body/fill', '#FE854F');
+            </pre>
+            <pre>
+// Create a clone of an element.
+var myShape2 = myShape.clone();
+myShape2.translate(400, 0);
+graph.addCell(myShape2);
+            </pre>
+            <pre>
+// Create a link that connects two elements.
+var myLink = new joint.shapes.standard.Link({
+    attrs: { line: { stroke: 'white' } },
+    source: { id: myShape.id, port: 'out1' },
+    target: { id: myShape2.id, port: 'in1' }
+});
+graph.addCell(myLink);
+            </pre>
+            <pre>
+// React on changes in the graph.
+graph.on('change add remove', function() {
+    var diagramJsonString = JSON.stringify(graph.toJSON());
+    console.log('Diagram JSON', diagramJsonString);
+});
+graph.on('change:level', function(cell) {
+    if (cell.prop('level') > 8) {
+        cell.prop('attrs/body/fill', 'red');
+    } else {
+        cell.prop('attrs/body/fill', 'white');
+    }
+});
+            </pre>
+            <pre>
+// Remove all links.
+var links = graph.getLinks();
+links.forEach(function(link) {
+    link.remove();
+});
+            </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Styling your application</h3>
+          <div class="section">
+          <p>
+            Rappid provides three bult-in themes that help you quick-start your application development.
+            However, any widget can be customized to meet your specific needs. You can just use CSS to style your application.
+            In our example app, we set the built-in 'dark' theme.
+          </p>
+            <pre>
+joint.setTheme('dark');
+            </pre>
+            <p>
+            Next to that, we need to provide HTML containers for our widgets and the bare minimum CSS for them. Basically, we
+            just specify how big the containers are and where on the page are they positioned.
+            </p>
+            <pre>
+&lt;div class="toolbar-container"&gt;&lt;/div&gt;
+&lt;div class="stencil-container"&gt;&lt;/div&gt;
+&lt;div class="paper-container"&gt;&lt;/div&gt;
+&lt;div class="inspector-container"&gt;&lt;/div&gt;
+            </pre>
+            <pre>
+/*  Paper  */
+.paper-container {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    top: 50px;  /* space for toolbar */
+    left: 240px; /* space for stencil */
+    right: 240px; /* space for inspector */
+}
+/*  Inspector  */
+.inspector-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+}
+/*  Stencil  */
+.stencil-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+}
+/*  Toolbar  */
+.toolbar-container {
+    position: absolute;
+    height: 50px;
+    left: 240px; /* space for stencil */
+    right: 0;
+}
+            </pre>
+          </div>
+        </li>
+
+        <li>
+          <h3>Final result</h3>
+          <div class="section">
+            Open our <a target="_blank" href="./demo/index.html">demo app</a> and study the full <a target="_blank" href="./demo/index.js">source code</a> and <a target="_blank" href="./demo/style.css">stylesheet</a>.
+          </div>
+        </li>
+      </ol>
+
+      <h2 class="header">3. Support</h2>
+      <p>
+        We're happy to help! We offer multiple support channels. See <a target="_blank" href="https://www.jointjs.com/support">https://www.jointjs.com/support</a> for more information.
+      </p>
+      <ul>
+        <li><a target="_blank" href="https://resources.jointjs.com/">Documentation, Tutorials and Demos</a><br/>
+          <p><b>Note to the documentation</b>: You'll notice the documentation in split into multiple sections:
+            <a target="_blank" href="https://resources.jointjs.com/docs/rappid/v3.2/index.html">Rappid</a>,
+            <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/joint.html">JointJS</a>,
+            <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/geometry.html">Geometry</a> and
+            <a target="_blank" href="https://resources.jointjs.com/docs/jointjs/v3.2/vectorizer.html">Vectorizer</a>.
+            A good rule to find your way in the documentation is to:
+            <ul>
+              <li>See <b>JointJS</b> documentation when looking for things related to the core, i.e. graph, paper, elements and links. </li>
+              <li>See <b>Rappid</b> documentation when looking for more high level widgets such as Stencil, Inspector, Undo/Redo (CommandManager), ... </li>
+              <li>See <b>Geometry</b> documentation when looking for math and algorithms useful in 2D space, i.e. distance between two points, line intersection, angle calculations, ... </li>
+              <li>See <b>Vectorizer</b> documentation when looking for SVG helpers (only advanced usage, usually not necessary for most cases)</li>
+            </ul>
+          </p>
+        </li>
+        <li><a target="_blank" href="https://www.jointjs.com/faq">FAQ</a></li>
+        <li><a target="_blank" href="https://www.jointjs.com/support">Paid Support Plans</a></li>
+        <li><a target="_blank" href="https://www.jointjs.com/online">Online Communities</a></li>
+        <li><a target="_blank" href="https://www.jointjs.com/custom">Custom Development Service</a></li>
+      </ul>
+
+      <h2 class="header">LICENSE</h2>
+      <p>
+        The Rappid framework is licensed under the <a target="_blank" href="../LICENSE">Rappid License</a>. Online version of the license is available at <a target="_blank" href="https://www.jointjs.com/license">https://www.jointjs.com/license</a>.
+      </p>
+
+
+    </div>
+
+    <script>
+      var ol = document.querySelector('ol');
+      ol.addEventListener('click', function(evt) {
+          var target = evt.target;
+      if (target.tagName.toUpperCase() === 'H3') {
+      target.parentNode.setAttribute('is-open', target.parentNode.getAttribute('is-open') === 'true' ? 'false' : 'true');
+          }
+      }, true);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/*! Rappid v3.2.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2020-07-25 
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  Paper  */
+.paper-container {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    top: 50px;  /* space for toolbar */
+    left: 240px; /* space for stencil */
+    right: 240px; /* space for inspector */
+}
+/*  Inspector  */
+.inspector-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+}
+/*  Stencil  */
+.stencil-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+}
+/*  Toolbar  */
+.toolbar-container {
+    position: absolute;
+    height: 50px;
+    left: 240px; /* space for stencil */
+    right: 0;
+}

@@ -1,0 +1,3 @@
+<div class="json-editor-container">
+    <textarea [placeholder]="placeholder" spellcheck="false" [ngModel]="content | json" (ngModelChange)="parseJSON($event)"></textarea>
+</div>

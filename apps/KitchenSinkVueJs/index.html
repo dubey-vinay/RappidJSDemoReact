@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rappid Demo Application</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../build/package/rappid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme-picker.css">
+
+    <!-- theme-specific application CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/style.dark.css">
+    <link rel="stylesheet" type="text/css" href="css/style.material.css">
+    <link rel="stylesheet" type="text/css" href="css/style.modern.css">
+</head>
+<body>
+
+    <div id="app" style="height: 100%">
+        <Rappid></Rappid>
+    </div>
+
+    <!-- Vue development version, includes helpful console warnings -->
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <!-- Rappid/JointJS dependencies: -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/lodash/lodash.js"></script>
+    <script src="/node_modules/backbone/backbone.js"></script>
+    <script src="/node_modules/graphlib/dist/graphlib.core.js"></script>
+    <script src="/node_modules/dagre/dist/dagre.core.js"></script>
+
+    <script src="../../build/package/rappid.js"></script>
+
+    <!-- Application files:  -->
+    <script src="./js/config/halo.js"></script>
+    <script src="./js/config/selection.js"></script>
+    <script src="./js/config/inspector.js"></script>
+    <script src="./js/config/stencil.js"></script>
+    <script src="./js/config/toolbar.js"></script>
+    <script src="./js/config/sample-graphs.js"></script>
+    <script src="./js/views/main.js"></script>
+    <script src="./js/views/theme-picker.js"></script>
+    <script src="./js/models/joint.shapes.app.js"></script>
+    <script src="./js/views/navigator.js"></script>
+
+    <!-- Rappid component-->
+    <script src="./js/rappid.component.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app'
+        });
+    </script>
+
+    <!-- Local file warning: -->
+    <div id="message-fs" style="display: none;">
+      <p>The application was open locally using the file protocol. It is recommended to access it trough a <b>Web server</b>.</p>
+      <p>Please see <a href="README.md">instructions</a>.</p>
+    </div>
+    <script>
+        (function() {
+            var fs = (document.location.protocol === 'file:');
+            var ff = (navigator.userAgent.toLowerCase().indexOf('firefox') !== -1);
+            if (fs && !ff) {
+               (new joint.ui.Dialog({
+                   width: 300,
+                   type: 'alert',
+                   title: 'Local File',
+                   content: $('#message-fs').show()
+                })).open();
+            }
+        })();
+    </script>
+
+</body>
+</html>

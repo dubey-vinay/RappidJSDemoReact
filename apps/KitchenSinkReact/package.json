@@ -1,0 +1,44 @@
+{
+  "name": "rappid-kitchen-sink",
+  "version": "2.4.0",
+  "description": "The Kitchen Sink Application for Rappid - React version",
+  "main": "index.html",
+  "author": "client IO",
+  "license": "http://jointjs.com/license/rappid",
+  "private": true,
+  "dependencies": {
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "backbone": "1.4.0",
+    "canvg-rappid": "1.0.2",
+    "@clientio/rappid": "file:../../build/package/rappid-3.2.0.tgz",
+    "dagre": "0.8.4",
+    "graphlib": "2.1.7",
+    "jquery": "3.5.0",
+    "lodash": "4.17.13",
+    "ws": "6.1.0"
+  },
+  "scripts": {
+    "watch": "webpack --watch",
+    "live-server": "http-server ./ --cors",
+    "start": "webpack && npm run live-server"
+  },
+  "devDependencies": {
+    "@types/backbone": "1.4.1",
+    "@types/dagre": "0.7.42",
+    "@types/graphlib": "2.1.5",
+    "@types/jest": "23.3.7",
+    "@types/jquery": "3.3.30",
+    "@types/lodash": "4.14.135",
+    "@types/node": "10.12.0",
+    "@types/react": "16.4.18",
+    "@types/react-dom": "16.0.9",
+    "http-server": "0.11.1",
+    "ts-loader": "5.2.2",
+    "css-loader": "3.5.3",
+    "style-loader": "1.2.1",
+    "typescript": "3.8.3",
+    "webpack": "4.35.0",
+    "webpack-cli": "3.3.5"
+  }
+}
